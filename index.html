@@ -32,8 +32,10 @@
             <h2 class="sect-title">About Me</h2>
             <div id="profile">
                 <picture>
-                    <source srcset="images/Kavi.jpg">
-                    <img src="images/Kavi.jpg" alt="a picture of Kavi" width="192" height="256">
+                    <source media="(min-width: 1200px)"srcset="images/Kavi.jpg">
+                    <source media="(min-width: 800px)"srcset="images/Kavi-Smaller.jpeg">
+                    <img srcset="images/Kavi-Smallest.jpeg"
+                     alt="a picture of Kavi">
                 </picture>
                 <p id="profile-description">I am Kavi. I am currently a student at UCSD studying Computer Science. Alongside my schoolwork, I enjoy sports and video games.</p>
             </div>

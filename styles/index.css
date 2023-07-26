@@ -62,7 +62,7 @@ h1, h2 {
         flex-direction: column-reverse;
     }
     
-    img {
+    #profile > picture > img {
         width: 92;
         height: 128;
     }
@@ -102,11 +102,9 @@ picture {
     padding-left: 1%;
 }
 
-
-
 picture:hover {
-    padding-left: 1%;
-    transform: scale(1.3);
+    padding-left: 2%;
+    transform: scale(1.2);
 }
 
 footer > * {
