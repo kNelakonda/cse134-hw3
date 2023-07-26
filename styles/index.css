@@ -37,13 +37,8 @@ h1, h2, picture{
     100% {
         opacity: 1;
     }
-
    
 }
-
-
-
-
 
 .navigation > ul {
     display: flex;
@@ -124,11 +119,14 @@ footer > * {
     padding-left: 1%;
 }
 
+#contact-links {
+    display: flex;
+    flex-basis: auto;
+    list-style: none;
+}
+
 #contact-links *{
     color: gold;
-    display: flex;
-    flex-direction: row;
     padding-left: 1%;
     padding-right: 1%;
-    border: 1px solid white;
 }
