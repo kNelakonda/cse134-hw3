@@ -1,5 +1,5 @@
 :root{
-    --main-color: navy;
+    --main-color: rgb(20, 20, 52);
 }
 
 @font-face {
@@ -24,24 +24,33 @@ section, header, footer {
 }
 
 
-h1 {
-    animation-duration: 3s;
-    animation-name: slideIn;
+h1, h2, picture{
+    color: gold;
+    padding-left: 1%;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-name: popIn;
+    animation-fill-mode: forwards;
 }
-@keyframes slideIn {
-    from{
+@keyframes popIn {
+
+    100% {
+        opacity: 1;
+    }
+
+   /* from{
         padding-left: 90%;
         width: 100%;
     }
     to {
         padding-left: 1%;
         width: 100%;
-    }
+    }*/
 }
 
 h1, h2 {
-    color: gold;
-    padding-left: 1%;
+    /*color: gold;
+    padding-left: 1%;*/
 }
 
 #nav-wrapper {
@@ -53,10 +62,9 @@ h1, h2 {
     display: flex;
     flex-direction: row-reverse;
     list-style: none;
-
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) or (hover:none){
     .navigation > ul{
         display: flex;
         flex-direction: column-reverse;
@@ -81,12 +89,12 @@ li > a {
     color: navy;
 }
 
-li:hover a{
+.navigation li:hover a{
     color: gold;
     transition-property: color;
     transition-duration: 1s;
 }
-li:hover{
+.navigation > ul > li:hover{
     background-color:green;
 }
 
@@ -111,3 +119,11 @@ footer > * {
     padding-left: 1%;
 }
 
+#contact-links *{
+    color: gold;
+    display: flex;
+    flex-direction: row;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid white;
+}
