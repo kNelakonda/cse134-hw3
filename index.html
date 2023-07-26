@@ -4,37 +4,42 @@
         <title>test site</title>
         <meta charset="UTF-8">
         <style>
-            * {
-                border: 1px solid black;
-            }
+            
         </style>
-        
-        <link rel="icon" href="images/favicon.ico">
+    <link rel='stylesheet' href='./styles/index.css' />
+    <link rel="icon" href="images/favicon.ico">
+    <!--<link rel="prel" href="./media/RobotoMono-VariableFont_wght.ttf"> -->
+
     </head>
     <body>
     <header>
-        <h1>Hi. I'm Kavi</h1>
-        <nav>
-            <a>About Me</a>
-            <a>My Past Work</a>
-            <a>Job Experience</a>
-            <a>Skills</a>
-            <a>Other Things I Do</a>
-            <a>Contact Info</a>
-        </nav>
-        
+        <h1>Hi, I'm Kavi</h1>
+         <div id="nav-wrapper"> 
+            <nav class="navigation">
+                <ul>
+                <li><a href="#contact-info">Contact Info</a></li>
+                <li><a href="#other-things">Other Things I Do</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#job-experience">Job Experience</a></li>
+                <li><a href="#my-past-work">My Past Work</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                </ul>
+            </nav>
+        </div>  
     </header>
     <main>
         <section id="about-me">
-            <h2>About Me</h2>
-            <picture >
-                <source srcset="images/Kavi.jpg">
-                <img src="images/Kavi.jpg" alt="picture of Kavi" width="96" height="128">
-            </picture>
-            <p>I am Kavi. I am currently a student at UCSD studying Computer Science. Alongside my schoolwork, I enjoy sports and video games.</p>
+            <h2 class="sect-title">About Me</h2>
+            <div id="profile">
+                <picture>
+                    <source srcset="images/Kavi.jpg">
+                    <img src="images/Kavi.jpg" alt="a picture of Kavi" width="192" height="256">
+                </picture>
+                <p id="profile-description">I am Kavi. I am currently a student at UCSD studying Computer Science. Alongside my schoolwork, I enjoy sports and video games.</p>
+            </div>
         </section>
         <section id="my-past-work">
-            <h2>My Past Work</h2>
+            <h2 class="sect-title">My Past Work</h2>
             <table>
                 <caption>Recent Projects</caption>
                 <colgroup>
@@ -56,7 +61,7 @@
             </table>
         </section>
         <section id="job-experience">
-            <h2>Job Experience</h2>
+            <h2 class="sect-title">Job Experience</h2>
             <ol>
                 <li><b>Job 1</b>
                     <br>
@@ -69,7 +74,7 @@
             </ol>
         </section>
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 class="sect-title">Skills</h2>
             <ul>
                 <li>skill 1</li>
                 <li>skill 2</li>
@@ -77,8 +82,8 @@
             </ul>
         </section>
         <section id="other-things">
-        <h2><span style="color:green">Other Things I Do</span></h2>
-        <details>
+            <h2 class="sect-title">Other Things I Do</h2>
+            <details>
             <summary>Video Games</summary>
             I play video games. More details to come.
         </details>
@@ -87,8 +92,8 @@
             I play Tennis and Ultimate Frisbee. More details to come.
         </details>
         </section>
-        <section>
-            <h2>Contact Information</h2>
+        <section id="contact-info">
+            <h2 class="sect-title">Contact Information</h2>
         </section>
     </main>
     <footer>
@@ -141,35 +146,7 @@
             
             <iframe src="extra.html"></iframe>
 
-            <canvas id="canvas">"This needs to work somehow"</canvas>
-            <script>
-                const canvas = document.getElementById("canvas");
-                const ctx = canvas.getContext("2d");
-                ctx.beginPath(); 
-                ctx.moveTo(0, 75); 
-                ctx.lineTo(200, 75); 
-                ctx.moveTo(150,0);
-                ctx.lineTo(150, 100);
-                ctx.stroke();
-            </script>
             <br>
-            <figure>
-                <audio controls>
-                    <source src="media/Echoes-Of-Silence.mp3" type="audio/mp3">
-                </audio>
-                <figcaption>This is just a song from <i>Echoes of Silence</i> by The Weeknd. Quite an old song.</figcaption>
-            </figure>
-
-            <figure>
-                <video width="270" height="480" controls>
-                    <source src="media/Nadal-Practice.mp4" type="video/mp4">
-                </video>
-                <figcaption>This is a video of Nadal practicing at the US Open</figcaption>
-            </figure>
-            <svg>
-                <circle cx="75" cy="75" r="50" fill="red"/>
-                <line x1="0" y1="80" x2="100" y2="20" stroke="black" />
-            </svg>
         </div>
     </footer>
 </body>

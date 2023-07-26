@@ -1,0 +1,111 @@
+:root{
+    --main-color: navy;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('RobotoMono-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+* {
+    font-family: 'Roboto Mono', 'Courier New';
+    color: white;
+
+}
+
+section, header, footer {
+    border: 2px solid green;
+}
+
+
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slideIn;
+}
+@keyframes slideIn {
+    from{
+        padding-left: 90%;
+        width: 100%;
+    }
+    to {
+        padding-left: 1%;
+        width: 100%;
+    }
+}
+
+h1, h2 {
+    color: gold;
+    padding-left: 1%;
+}
+
+#nav-wrapper {
+    top: 0;
+    position: sticky;
+}
+
+.navigation > ul {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+
+}
+
+@media (max-width: 800px){
+    .navigation > ul{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
+
+
+.navigation  li {
+    font-size: large;
+    background-color: gold;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+li > a {
+    color: navy;
+}
+
+li:hover a{
+    color: gold;
+    transition-property: color;
+    transition-duration: 1s;
+}
+li:hover{
+    background-color:green;
+}
+
+#profile {
+    display: flex;
+
+}
+
+#profile-description {
+    padding-left: 2%;
+}
+
+picture {
+    padding-left: 1%;
+}
+
+picture:hover {
+    padding-left: 1%;
+    transform: scale(1.3);
+}
+
+footer > * {
+    padding-left: 1%;
+}
+
