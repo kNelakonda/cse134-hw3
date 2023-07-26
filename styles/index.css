@@ -76,6 +76,23 @@ h1, h2 {
     }
 }
 
+@media (hover:none){
+
+    * {
+        font-size:3vw;
+    }
+
+
+    .navigation > ul{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #profile > picture > img {
+        width: 92;
+        height: 128;
+    }
+}
 
 .navigation  li {
     font-size: large;
